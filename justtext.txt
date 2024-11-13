@@ -1,0 +1,119 @@
+Compiled Languages:
+ALGOL
+C
+<C#>
+<C++>
+Fortran
+Java
+F#
+Visual Basic
+Cobol
+Smalltalk
+Emacs Lisp
+
+
+Interpreted Languages:
+APL
+Lisp
+Pascal
+Emacs Lisp
+JavaScript
+Perl
+Python
+
+
+Scripting Languages:
+AutoIt
+GML:GML,Game Maker Language
+PHP
+R
+JavaScript
+Emacs Lisp
+VBScript
+MAXScript
+Awk
+
+Procedural Languages:
+Go
+HyperTalk
+PL/I
+MATLAB
+Pike
+JavaScript
+Curl
+Cobra
+
+Functional Languages:
+Pure Functional languages:
+Clean
+Elm
+Idris
+Haskell
+Mercury
+
+Impure Functional languages:
+C++
+C#
+Python
+PHP
+Kotlin
+Lisp
+Clojure
+JScript
+F#
+Ceylon
+Emacs Lisp
+JavaScript
+Elixir
+
+
+Logic-based Programming Languages:
+Prolog
+Oz
+
+Object-Oriented Languages:
+Scala
+C++
+Java
+Python
+C#
+
+Embeddable languages:
+1.Server Side
+PHP
+VBScript
+Tcl
+WebDNA
+
+2.Client Side
+ActionScript
+JavaScript
+VBScript
+
+
+System languages:
+Ada
+Nim
+Rust
+Swift
+
+Concurrent Languages:
+Java
+Scala
+Clojure
+Julia
+Go
+Oz
+Elixir
+
+List-based languages:
+Lisp
+Arc
+Clojure
+Emacs Lisp5
+R
+Dylan
+
+Query languages:
+SQL
+XQuery

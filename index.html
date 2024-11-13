@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Bootstrap%205.3.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="Bootstrap%205.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- External Javascript -->
+    <script src="javascript/script.js"></script>
+</head>
+
+<body>
+
+    <!--Icon SVGs-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="menuicon" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+            </path>
+        </symbol>
+
+        <symbol id="logo" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z">
+            </path>
+        </symbol>
+
+        <symbol id="linkedin1" viewBox="0 0 32 32">
+            <path
+                d="M 7.5 5 C 6.132813 5 5 6.132813 5 7.5 L 5 24.5 C 5 25.867188 6.132813 27 7.5 27 L 24.5 27 C 25.867188 27 27 25.867188 27 24.5 L 27 7.5 C 27 6.132813 25.867188 5 24.5 5 Z M 7.5 7 L 24.5 7 C 24.785156 7 25 7.214844 25 7.5 L 25 24.5 C 25 24.785156 24.785156 25 24.5 25 L 7.5 25 C 7.214844 25 7 24.785156 7 24.5 L 7 7.5 C 7 7.214844 7.214844 7 7.5 7 Z M 10.4375 8.71875 C 9.488281 8.71875 8.71875 9.488281 8.71875 10.4375 C 8.71875 11.386719 9.488281 12.15625 10.4375 12.15625 C 11.386719 12.15625 12.15625 11.386719 12.15625 10.4375 C 12.15625 9.488281 11.386719 8.71875 10.4375 8.71875 Z M 19.46875 13.28125 C 18.035156 13.28125 17.082031 14.066406 16.6875 14.8125 L 16.625 14.8125 L 16.625 13.5 L 13.8125 13.5 L 13.8125 23 L 16.75 23 L 16.75 18.3125 C 16.75 17.074219 16.996094 15.875 18.53125 15.875 C 20.042969 15.875 20.0625 17.273438 20.0625 18.375 L 20.0625 23 L 23 23 L 23 17.78125 C 23 15.226563 22.457031 13.28125 19.46875 13.28125 Z M 9 13.5 L 9 23 L 11.96875 23 L 11.96875 13.5 Z">
+            </path>
+        </symbol>
+
+        <symbol id="github1" viewBox="0 0 64 64">
+            <path
+                d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z">
+            </path>
+        </symbol>
+
+        <symbol id="twitter1" viewBox="0 0 48 48">
+            <path
+                d="M 32 6 C 26.568583 6 22.160643 10.388731 22.042969 15.792969 C 17.240727 15.216998 14.113589 13.421507 12.195312 11.652344 C 10.067982 9.6903754 9.3945312 7.9472656 9.3945312 7.9472656 A 1.50015 1.50015 0 0 0 6.8007812 7.5996094 C 6.8007812 7.5996094 5 10 5 13.5 C 5 15.500985 5.6317952 16.981554 6.3847656 18.236328 C 6.3570276 18.223338 6.1699219 18.158203 6.1699219 18.158203 A 1.50015 1.50015 0 0 0 4.0058594 19.636719 C 4.0058594 19.636719 4.5832039 23.856843 8.5507812 26.941406 L 8.1367188 27.044922 A 1.50015 1.50015 0 0 0 7.1972656 29.244141 C 7.1972656 29.244141 7.8700527 30.382221 9.2792969 31.580078 C 10.11485 32.290298 11.34227 33.023169 12.789062 33.701172 C 11.012271 34.35044 8.362818 35 4.5 35 A 1.50015 1.50015 0 0 0 3.3710938 37.488281 C 3.3710938 37.488281 4.5173251 38.751002 6.7832031 39.849609 C 9.0490812 40.948217 12.539474 42 17.5 42 C 26.219697 42 32.484656 37.817151 36.394531 32.515625 C 40.304407 27.214099 42 20.861111 42 16 C 42 15.691547 41.980739 15.387437 41.953125 15.085938 C 44.064371 13.051602 44.856626 11.522235 44.894531 11.447266 C 45.084531 11.066266 45.01375 10.608688 44.71875 10.304688 C 44.42475 9.9996875 43.969031 9.9137969 43.582031 10.091797 L 43.419922 10.166016 C 43.280922 10.230016 43.141953 10.294422 43.001953 10.357422 C 43.408953 9.7084219 43.730125 9.014875 43.953125 8.296875 C 44.077125 7.900875 43.943234 7.4669375 43.615234 7.2109375 C 43.287234 6.9549375 42.835469 6.9275312 42.480469 7.1445312 C 41.258221 7.8873594 40.086652 8.40739 38.867188 8.7558594 C 37.072578 7.0534724 34.656873 6 32 6 z M 32 9 C 35.883178 9 39 12.116822 39 16 C 39 20.138889 37.445593 26.035901 33.980469 30.734375 C 30.515344 35.432849 25.280303 39 17.5 39 C 13.7348 39 11.230189 38.318942 9.3535156 37.582031 C 11.319341 37.276755 13.011947 36.869367 14.228516 36.398438 C 16.338182 35.581792 17.476563 34.638672 17.476562 34.638672 A 1.50015 1.50015 0 0 0 16.863281 32.044922 C 14.140556 31.364241 12.394328 30.263307 11.298828 29.345703 L 12.863281 28.955078 A 1.50015 1.50015 0 0 0 13.039062 26.099609 C 9.7939415 24.851486 8.4312292 23.086373 7.734375 21.607422 C 8.5823538 21.782967 9.3718961 22 10.5 22 A 1.50015 1.50015 0 0 0 11.169922 19.158203 C 11.169922 19.158203 8 17.7 8 13.5 C 8 12.745947 8.2088435 12.268355 8.3613281 11.697266 C 8.884507 12.400354 9.3156815 13.07859 10.160156 13.857422 C 12.734824 16.231954 16.990366 18.653154 23.419922 18.998047 A 1.50015 1.50015 0 0 0 25 17.5 L 25 16 C 25 12.116822 28.116822 9 32 9 z">
+            </path>
+        </symbol>
+
+        <symbol id="scrolldown" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z">
+            </path>
+        </symbol>
+
+        <symbol id="linkedin2" viewBox="0 0 16 16">
+            <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+            </path>
+        </symbol>
+
+        <symbol id="github2" viewBox="0 0 16 16">
+            <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+            </path>
+        </symbol>
+
+        <symbol id="twitter2" viewBox="0 0 16 16">
+            <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+            </path>
+        </symbol>
+    </svg>
+    <!--Icon SVGs-->
+
+    <!--Introduction Section-->
+    <div class="intro-background" id="home">
+
+        <!-- Header Section -->
+        <section class="page-width">
+            <div>
+                <!-- Navigation Bar -->
+                <div id="navbar">
+                    <div id="nav-left">
+                        <div>
+                            <img src="images/profilephoto.jpg" alt="Profile Photo">
+                        </div>
+                        <div>
+                            <a class="nav-link fs-5 text-color1 text-color2" href="">ABHI'S PORTFOLIO</a>
+                        </div>
+                    </div>
+                    <div id="nav-right">
+                        <div id="main" onclick="openNav()">
+                            <a class="nav-link text-color1 fs-5 user-select-none text-color2" href=""
+                                data-bs-toggle="offcanvas">MENU</a>
+                            <svg class="bi bi-list" fill="rgba(0, 0, 0, 0.30)" height="30" width="30">
+                                <use xlink:href="#menuicon" />
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+                <!-- Navigation Bar -->
+
+                <!--Sidebar Section-->
+                <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#projectlink">PROJECTS</a>
+                    <a href="#skillslink">TECHNOLOGIES</a>
+                    <a href="#aboutlink">ABOUT</a>
+                    <a href="#contactlink">CONTACT</a>
+                    <a href="#workenquirylink">WORK ENQUIRY</a>
+                    <a href="#">RESUME</a>
+                </div>
+                <!--Sidebar Section-->
+
+            </div>
+        </section>
+        <!-- Header Section -->
+
+
+        <!-- Intro Section -->
+        <section class="page-width">
+            <div class="text-light mt-5 pt-5">
+                <h1 class="display-1 text-color1">HELLO</h1>
+                <h1 class="display-4 text-color1">I'm ABHISHEK D JAISWAR</h1>
+                <p class="fs-4 text-color1 pb-2">I am Passionate about new Technologies
+                    with problem-solving <br> skills and ability to perform well in a team.
+                </p>
+            </div>
+        </section>
+        <!-- Intro Section -->
+
+
+        <!-- QuickLink Section -->
+        <div class="quick-link1">
+            <section class="nav quick-link2">
+                <a class="nav-link text-light" href="#projectlink">PROJECTS</a>
+            </section>
+            <section class="nav quick-link2">
+                <a class="nav-link text-light" href="#skillslink">SKILLS</a>
+            </section>
+            <section class="nav quick-link3">
+                <a class="nav-link text-light" href="#contactlink">CONTACT</a>
+            </section>
+        </div>
+        <!-- QuickLink Section -->
+
+
+        <!-- Social Section -->
+        <section class="page-width">
+            <div id="social-bar">
+                <div id="social-left">
+                    <div>
+                        <a href="https://www.linkedin.com/in/abhishekjaiswar221" class="text-decoration-none">
+                            <svg x="0px" y="0px" width="42" height="42" fill="rgba(0, 0, 0, 0.30)">
+                                <use xlink:href="#linkedin1" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.github.com/abhishekjaiswar221" class="text-decoration-none">
+                            <svg x="0px" y="0px" width="45" height="45" fill="rgba(0, 0, 0, 0.30)">
+                                <use xlink:href="#github1" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.twitter.com/DevendraAbhi221" class="text-decoration-none">
+                            <svg x="0px" y="0px" width="36" height="36" fill="rgba(0, 0, 0, 0.30)">
+                                <use xlink:href="#twitter1" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div id="social-right">
+                    <div id="scroll-text">
+                        <a class="nav-link" href="#projectlink">SCROLL
+                            DOWN</a>
+                    </div>
+                    <div id="scroll-icon">
+                        <a href="#projectlink"><i class="bi bi-arrow-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Social Section -->
+    </div>
+    <!--Introduction Section-->
+
+    <!-- Projects Section -->
+    <div class="page-width" id="projectlink">
+
+        <section>
+            <h5 class="fw-bold" style="color: #1FD0E5; letter-spacing: 0.1rem">/ PROJECTS</h5>
+            <h2>Some Of My Projects</h2>
+        </section>
+
+
+        <section>
+            <div class="row mx-auto py-2">
+                <div class="col-7 mx-auto ps-0">
+                    <img class="img-size" src="/images/HomePage.png" alt="Project1">
+                </div>
+                <div class="col-5 border background-color1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magni quidem delectus
+                        distinctio. Velit optio perspiciatis quia officia? Aliquid inventore mollitia magni nobis
+                        consequuntur vel cumque ab voluptates accusantium eveniet?
+                    </p>
+                    <a class="btn btn-outline-success border-2" href="">Source Code</a>
+                </div>
+            </div>
+            <div class="row mx-auto py-2">
+                <div class="col-5 border background-color1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus eaque, in itaque
+                        similique culpa perspiciatis. Velit corrupti impedit cum possimus, voluptatibus, nihil dolor
+                        similique quibusdam, laboriosam voluptate ratione libero?
+                    </p>
+                    <a class="btn btn-outline-success border-2" href="">Source Code</a>
+                </div>
+                <div class="col-7 mx-auto">
+                    <img class="img-size" src="/images/cruisewebsite.png" alt="Project2">
+                </div>
+            </div>
+            <div class="row mx-auto py-2">
+                <div class="col-7 mx-auto ps-0">
+                    <img class="img-size" src="/images/portfoliowebsite.png" alt="Project3">
+                </div>
+                <div class="col-5 border background-color1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad magni quidem delectus
+                        distinctio. Velit optio perspiciatis quia officia? Aliquid inventore mollitia magni nobis
+                        consequuntur vel cumque ab voluptates accusantium eveniet?
+                    </p>
+                    <a class="btn btn-outline-success border-2" href="">Source Code</a>
+                </div>
+            </div>
+            <div class="row mx-auto py-2">
+                <div class="col-5 border background-color1">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus eaque, in itaque
+                        similique culpa perspiciatis. Velit corrupti impedit cum possimus, voluptatibus, nihil dolor
+                        similique quibusdam, laboriosam voluptate ratione libero?
+                    </p>
+                    <a class="btn btn-outline-success border-2" href="">Source Code</a>
+                </div>
+                <div class="col-7 mx-auto">
+                    <img class="img-size" src="/images/webpage using bootstrap.png" alt="Project4">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Projects Section -->
+
+    <!-- Skills Section -->
+    <div class="border-top background-color1" id="skillslink">
+        <div class="page-width">
+
+            <section>
+                <h5 class="fw-bold" style="color: #7db834; letter-spacing: 0.1rem">/ SKILLS</h5>
+                <h2>These Are My Skills</h2>
+            </section>
+
+            <section class="pt-5">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Programming Languages</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Web Technologies</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Databases</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Programming Languages</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Web Technologies</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border">
+                            <h4>Databases</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, aut. Veniam nulla
+                                soluta
+                                sequi? Vel dolor eos, quia natus veritatis corrupti totam corporis minus quos, a ipsa
+                                reprehenderit, iure atque?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-5">
+                <div class="text-center">
+                    <button class="btn btn-outline-info">Download Resume</button>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- Skills Section -->
+
+    <!-- About Section -->
+    <div class="text-light background-color2" id="aboutlink">
+        <div class="page-width">
+            <div class="row">
+                <div class="col-8">
+
+                    <section>
+                        <h5 class="fw-bold" style="color: #7db834; letter-spacing: 0.1rem">/ ABOUT</h5>
+                        <h2>Few Things About Me</h2>
+                    </section>
+
+                    <section class="pt-5">
+                        <p class="fs-4 pt-4">
+                            I'm committed to learning new technologies and tools to improve my knowledge and skills
+                            and become a newer version of myself every day. Good interpersonal and teamwork abilities,
+                            better
+                            one-on-one communication skills, good presenting skills, and a sound understanding of public
+                            speaking.
+                        </p>
+                    </section>
+
+                </div>
+                <div class="col-4">
+                    <!--Svg Animation-->
+                    <div class="svg-position">
+                        <svg class="BgAnimation__svg" viewBox="0 0 602 602" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.15">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z"
+                                    stroke="url(#paint0_radial)" id="path_0"></path>
+                                <path
+                                    d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z"
+                                    stroke="url(#paint1_radial)" id="path_1"></path>
+                                <path
+                                    d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z"
+                                    stroke="url(#paint2_radial)" id="path_2"></path>
+                            </g>
+                            <ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306"
+                                ry="1.07433" fill="#945DD6">
+                                <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_2"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M294.685 193.474L268.932 219.258"
+                                transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)"
+                                stroke="url(#paint3_linear)">
+                                <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_2"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306"
+                                ry="1.07433" fill="#46737">
+                                <animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_2"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M294.685 193.474L268.932 219.258"
+                                transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)"
+                                stroke="url(#paint7_linear)">
+                                <animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_2"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306"
+                                transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#945DD6">
+                                <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M476.171 362.952L450.417 337.168"
+                                transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)"
+                                stroke="url(#paint4_linear)">
+                                <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="382.164" cy="155.029" rx="1.07433" ry="1.07306"
+                                transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)" fill="#F46737">
+                                <animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M381.81 154.669L356.057 128.885"
+                                transform="translate(-381.81 -154.669) rotate(-45 381.81 154.669)"
+                                stroke="url(#paint5_linear)">
+                                <animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="333.324" cy="382.691" rx="1.07306" ry="1.07433"
+                                transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)" fill="#F46737">
+                                <animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_1"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M333.667 382.335L359.42 356.551"
+                                transform="scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)"
+                                stroke="url(#paint6_linear)">
+                                <animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_1"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="165.524" cy="93.9596" rx="1.07306" ry="1.07433"
+                                transform="translate(-165.524 -93.9596)" fill="#F46737">
+                                <animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M165.182 94.3159L139.429 120.1"
+                                transform="translate(-165.182 -94.3159) rotate(45 165.182 94.3159)"
+                                stroke="url(#paint7_linear)">
+                                <animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </path>
+                            <ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306"
+                                transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#13ADC7">
+                                <animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </ellipse>
+                            <path d="M476.171 362.952L450.417 337.168"
+                                transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)"
+                                stroke="url(#paint11_linear)">
+                                <animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto">
+                                    <mpath xlink:href="#path_0"></mpath>
+                                </animateMotion>
+                            </path>
+                            <defs>
+                                <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                    <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                    <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(301 301) rotate(90) scale(300)">
+                                    <stop offset="0.333333" stop-color="#FBFBFB"></stop>
+                                    <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <linearGradient id="paint3_linear" x1="295.043" y1="193.116" x2="269.975" y2="218.154"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#945DD6"></stop>
+                                    <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint4_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#945DD6"></stop>
+                                    <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint5_linear" x1="382.168" y1="155.027" x2="357.1" y2="129.989"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F46737"></stop>
+                                    <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint6_linear" x1="333.309" y1="382.693" x2="358.376" y2="357.655"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F46737"></stop>
+                                    <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint7_linear" x1="165.54" y1="93.9578" x2="140.472" y2="118.996"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F46737"></stop>
+                                    <stop offset="1" stop-color="#F46737" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint8_linear" x1="414.367" y1="301.156" x2="439.435" y2="276.118"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#13ADC7"></stop>
+                                    <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint9_linear" x1="515.943" y1="288.238" x2="541.339" y2="291.454"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#13ADC7"></stop>
+                                    <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint10_linear" x1="117.001" y1="230.619" x2="117.36" y2="258.193"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#945DD6"></stop>
+                                    <stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint11_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#13ADC7"></stop>
+                                    <stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <!--Svg Animation-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+
+
+    <!-- Contact Section -->
+    <div class="page-width" id="contactlink">
+        <div class="row">
+            <div class="col-6">
+
+                <section>
+                    <h5 class="fw-bold" style="color: #7db834; letter-spacing: 0.1rem">/ CONTACT ME</h5>
+                    <h2>Reach Out To Me At</h2>
+                </section>
+
+                <section class="pt-5">
+                    <h3 class="pt-4">Emails :</h3>
+                    <h4>abhishekjaiswar221@gmail.com</h4>
+                    <h4>abhishekjaiswar221@outlook.com</h4>
+                </section>
+
+            </div>
+            <div class="col-6 pt-5">
+                <img src="images/marketing2.jpg" style="height: 300px; width: 495px;" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+
+
+    <!-- Work Enquiry Section -->
+    <div class="border-top background-color1" id="workenquirylink">
+        <div class="page-width">
+            <div class="row mx-auto">
+                <div class="col-6 text-center">
+                    <img src="images/comppic.png" style="height: 400px; width: 400px;" alt="">
+                </div>
+
+                <div class="col-6">
+
+                    <section class="text-center">
+                        <h1 class="">Work Enquiry</h1>
+                    </section>
+
+                    <section class="container">
+                        <div class="mx-5 px-4 pt-4">
+                            <div class="form">
+                                <div class="my-3">
+                                    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="Message" class="form-control" placeholder="Messsage" id="" cols="30"
+                                        rows="4"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button class="form-control btn btn-outline-info">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Work Enquiry Section -->
+
+
+    <!-- Footer Section -->
+    <div class="text-light py-3 background-color2">
+
+        <section>
+            <div>
+                <h6 class="text-center ">Stay Connected</h6>
+            </div>
+            <div class="text-center mx-auto py-1">
+                <a href="https://www.linkedin.com/in/abhishekjaiswar221" class="text-decoration-none">
+                    <svg width="22" height="22" fill="white" class="bi bi-linkedin">
+                        <use xlink:href="#linkedin2" />
+                    </svg>
+                </a>
+                &nbsp;
+                <a href="https://www.github.com/abhishekjaiswar221" class="text-decoration-none">
+                    <svg width="22" height="22" fill="white" class="bi bi-github">
+                        <use xlink:href="#github2" />
+                    </svg>
+                </a>
+                &nbsp;
+                <a href="https://www.twitter.com/DevendraAbhi221" class="text-decoration-none">
+                    <svg width="22" height="22" fill="white" class="bi bi-twitter">
+                        <use xlink:href="#twitter2" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="text-center pt-4">
+                <h6>&copy; Copyright 2023 By Abhishek D Jaiswar | All Rights Reserved</h6>
+                <h6>abhishekjaiswarportfolio.netlify.app</h6>
+            </div>
+        </section>
+
+    </div>
+    <!-- Footer Section -->
+
+
+</body>
+
+</html>

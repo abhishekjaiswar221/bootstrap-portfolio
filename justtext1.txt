@@ -1,0 +1,342 @@
+ABAP
+ABC: ABC (exceptions: -tv -channel)
+APL
+ATLAS
+ActionScript: ActionScript, AS1, AS2, AS3
+Ada
+Agilent VEE
+Algol
+Alice: Alice (confidence: 90%)
+Angelscript
+Apex
+Applescript
+Arc
+AspectJ
+Assembly language: Assembly, Assembly language
+AutoHotkey: AutoHotkey, AHK
+AutoIt
+AutoLISP
+Automator
+Avenue
+Awk: Awk, Mawk, Gawk, Nawk
+
+
+
+B4X
+BBC BASIC
+BCPL
+BETA: BETA (confidence: 10%)
+Ballerina
+Bash
+Basic: Basic (confidence: 0%)
+BlitzMax: BlitzMax, BlitzBasic, Blitz Basic
+Boo
+Bourne shell: Bourne shell, sh
+Brainfuck
+
+
+
+C shell: Csh, C shell (confidence: 90%)
+C#: C#, C-Sharp, C Sharp, CSharp, CSharp.NET, C#.NET
+C++
+C++/CLI
+C-Omega
+C: C (exceptions: -"Objective-C")
+CFML: CFML, ColdFusion
+CHILL
+CIL
+CL (OS/400): CL (exceptions: -Lisp), CLLE
+CLIPS
+CLU
+COBOL
+COMAL
+Caml
+Carbon
+Ceylon
+Ch: Ch (exceptions: +ChScite)
+Chapel: Chapel (exceptions: -christ)
+Citrine
+Clarion
+Classic Visual Basic: Visual Basic (confidence: 50%), VB (confidence: 50%), VBA, VB6
+Clean: Clean (confidence: 43%)
+Clipper
+Clojure: Clojure, ClojureScript
+Cobra
+CoffeeScript
+Common Lisp
+Crystal: Crystal (confidence: 61%, exceptions: -healing), crystallang
+Curl
+
+
+
+D: D (confidence: 90%, exceptions: -"3-D programming" -"DTrace"), dlang
+DCL
+Dart
+Delphi/Object Pascal: DwScript, Object Pascal, Delphi, Delphi.NET, Pascal (confidence: 95%)
+DiBOL: DBL, Synergy/DE, DIBOL
+Dylan
+
+
+
+E: E (exceptions: +specman)
+ECMAScript
+EGL
+EXEC
+Eiffel
+Elixir
+Elm
+Emacs Lisp: Emacs Lisp, Elisp
+Emerald
+Erlang
+Etoys
+Euphoria
+
+
+F#: F#, F-Sharp, FSharp, F Sharp
+Factor
+Falcon
+Fantom
+Felix: Felix (confidence: 86%)
+Forth
+Fortran
+Fortress
+FreeBASIC
+
+
+
+GAMS
+GLSL
+GML: GML, GameMaker Language
+GNU Octave
+Gambas
+Go: Go, Golang
+Gosu
+Groovy: Groovy, GPATH, GSQL, Groovy++
+
+
+
+HPL
+Hack
+Harbour
+Haskell
+Haxe
+Heron
+HyperTalk
+
+
+IDL: IDL (exceptions: -corba -interface)
+INTERCAL
+Icon: Icon (confidence: 90%)
+Idris
+Inform
+Informix-4GL
+Io
+Ioke
+
+
+J#
+J: J (confidence: 50%)
+JADE
+JScript
+JScript.NET
+Java
+JavaFX Script
+JavaScript: JavaScript, JS, SSJS
+Julia: Julia, Julialang, julia-lang
+
+
+
+Korn shell: Korn shell, ksh
+Kotlin
+
+
+
+LPC
+LabVIEW
+Ladder Logic
+Lasso
+Limbo
+Lingo
+Lisp
+LiveCode: Revolution, LiveCode
+Logo: Logo (confidence: 90%, exceptions: -tv)
+LotusScript
+Lua: Lua, LuaJIT
+Lustre
+
+
+
+M4
+MAD: MAD (confidence: 50%)
+MANTIS
+MATLAB
+MAXScript
+MDX
+MEL
+ML
+MOO
+MQL5: MQL4, MQL5
+MS-DOS batch
+MUMPS
+Magic: Magic (confidence: 50%)
+Magik
+Malbolge
+Maple
+Max/MSP
+Mercury
+Miva
+Modula-2
+Modula-3
+Monkey
+Moto
+
+
+
+
+NATURAL
+NQC
+NSIS
+NXT-G
+Nemerle
+NetLogo
+Nim: Nim, Nimrod
+Nix
+
+
+OCaml: Objective Caml, OCaml
+OPL
+Oberon
+Object Rexx
+Objective-C: Objective-C, objc, obj-c
+Occam
+OpenCL
+OpenEdge ABL: Progress, Progress 4GL, ABL, Advanced Business Language, OpenEdge
+Oxygene
+Oz
+
+
+
+
+PHP
+PILOT: PILOT (confidence: 50%, exceptions: -"Palm Pilot programming")
+PL/I: PL/1, PL/I
+PL/SQL
+POV-Ray
+Paradox
+Pascal: Pascal (confidence: 5%)
+Perl
+Pike
+Pliant
+Pony
+PostScript: PostScript, PS
+PowerBasic
+PowerScript
+PowerShell
+Processing: Processing (exceptions: +"sketchbook")
+Programming Without Coding Technology: Programming Without Coding Technology, PWCT
+Prolog
+Pure Data: Pure Data, PD
+PureBasic
+Python
+
+
+
+Q
+
+
+R: R (confidence: 90%, exceptions: +"statistical")
+REBOL
+REXX
+RPG: RPG (confidence: 80%, exceptions: -role), RPGLE, ILERPG, RPGIV, RPGIII, RPG400, RPGII, RPG4
+Racket
+Raku: Perl 6, Raku
+Red: Red (confidence: 20%)
+Ring
+Rust: Rust, Rustlang
+
+
+
+S-PLUS: S-PLUS (exceptions: +statistical)
+S: S (exceptions: +statistical)
+SAS
+SIGNAL: SIGNAL (confidence: 10%)
+SNOBOL
+SPARK
+SPSS
+SQL
+SQR
+Sather
+Scala
+Scheme: Scheme (exceptions: -tv -channel)
+Scratch
+Seed7
+Simula
+Simulink
+Slate: Slate (confidence: 57%)
+Small Basic
+Smalltalk
+Smarty
+Snap!
+Solidity
+Squeak
+Squirrel
+Standard ML: Standard ML, SML
+Stata
+Structured Text
+Suneido
+SuperCollider: SuperCollider (confidence: 80%)
+Swift
+SystemVerilog: SystemVerilog, Verilog
+
+
+
+
+TACL
+TOM: TOM (confidence: 50%)
+Tcl: Tcl/Tk, Tcl
+Tex
+Transact-SQL: T-SQL, Transact-SQL, TSQL
+TypeScript: TypeScript, TS
+
+
+
+Uniface
+
+
+VBScript
+VHDL
+Vala/Genie: Vala, Genie
+Visual Basic: Visual Basic .NET, VB.NET, Visual Basic.NET, Visual Basic (confidence: 50%), VB (confidence: 50%)
+
+
+
+WebAssembly: WASM, WebAssembly
+WebDNA
+Whitespace
+Wolfram: Mathematica, Wolfram
+
+
+
+X++
+X10
+XBase++
+XC
+XPL
+XQuery
+XSLT
+Xen
+Xojo: REALbasic, Xojo
+Xtend
+
+
+Yorick
+Z shell: Z shell, zsh
+Zig: Zig, zlang
+bc
+cT
+cg: cg (confidence: 80%, exceptions: -"computer game" -"computer graphics")
+sed
+tcsh
+thinBasic
+xBase
+yacc
